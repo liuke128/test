@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-	float average(float array[3]);
-	float score[3],aver;
+	float average(float array[4]);
+	float score[4],aver;
 	int i;
-	printf("ÊäÈë3¸ö³É¼¨£º\n");
-	for(i=0;i<3;i++)
+	printf("ÃŠÃ¤ÃˆÃ«3Â¸Ã¶Â³Ã‰Â¼Â¨Â£Âº\n");
+	for(i=0;i<4;i++)
 	{
 		scanf("%f",&score[i]);
     }
@@ -14,14 +14,14 @@ int main()
     printf("average score is %5.2f\n",aver);
     return 0;
 }
-float average(float array[3])
+float average(float array[4])
 {
 	int i;
-	float aver,sum=array[3];
-	for(i=0;i<3;i++)
+	float aver,sum=array[4];
+	for(i=0;i<4;i++)
 	{
 		sum=sum+array[i];
 	}
-	aver=sum/3;
+	aver=sum/4;
 	return (aver);
 }
